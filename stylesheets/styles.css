@@ -65,12 +65,12 @@ nav ul li {
   font-weight: bold;
   transition: all 0.5s linear;
 }
-ul li a {
+nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-ul li:hover a {
+nav ul li:hover a {
   border-bottom: 3px solid #daa520;
 }
 
@@ -150,7 +150,6 @@ ul li:hover a {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0px;
-  background-image: url(../images/pattern.png);
   background-repeat: repeat;
 }
 
@@ -221,11 +220,15 @@ ul li:hover a {
   .footer_banner .intro_header {
     margin-top: 1px;
   }
+  /* Turn off parallax scrolling for all tablets and phones. */
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
-  ul li::after {
+  nav ul li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -235,7 +238,7 @@ ul li:hover a {
     transition: 0.5s;
   }
 
-  ul li:hover::after {
+  nav ul li:hover::after {
     width: 100%;
   }
   .katrina {
@@ -291,7 +294,7 @@ ul li:hover a {
 
 /* Large Desktops */
 @media (min-width: 1096px) and (max-width: 1920px) {
-  ul li::after {
+  nav ul li::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -301,7 +304,7 @@ ul li:hover a {
     transition: 0.5s;
   }
 
-  ul li:hover::after {
+  nav ul li:hover::after {
     width: 100%;
   }
   .katrina {
@@ -354,4 +357,49 @@ ul li:hover a {
   .footer_banner {
     margin-top: 700px;
   }
+}
+
+/* Skills Page */
+.parallax {
+  /* background-image: url("../images/Peach\ Floral\ Desktop\ Wallpaper\ \(3\).png"); */
+  background-image: url("../images/gradient-background.jpg");
+  height: 60%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills {
+  background-color: #ffffff;
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 5px 10px 18px 5px #888888;
+  margin-top: -300px;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
+  text-align: center;
+  list-style-position: inside;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.parallax_footer_banner {
+  margin-top: auto;
+  bottom: 0;
+  margin-top: 0px;
+  background-color: #b3b3b3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+  background-repeat: repeat;
 }
