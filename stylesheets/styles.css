@@ -362,7 +362,7 @@ nav ul li:hover a {
 /* Skills Page */
 .parallax {
   /* background-image: url("../images/Peach\ Floral\ Desktop\ Wallpaper\ \(3\).png"); */
-  background-image: url("../images/gradient-background.jpg");
+  background-image: url("../images/parallax_background.png");
   height: 60%;
 
   /* Create the parallax scrolling effect */
@@ -385,14 +385,6 @@ nav ul li:hover a {
   text-align: center;
 }
 
-.skills ul {
-  text-align: center;
-  list-style-position: inside;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
 .parallax_footer_banner {
   margin-top: auto;
   bottom: 0;
@@ -402,4 +394,36 @@ nav ul li:hover a {
   padding-bottom: 60px;
   margin-bottom: 0px;
   background-repeat: repeat;
+}
+
+@media (min-width: 100px) and (max-width: 320px) {
+  .skills ul {
+    text-align: center;
+    list-style-position: inside;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+  .skills ul {
+    text-align: center;
+    list-style-position: inside;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1096px) and (max-width: 1920px) {
+  .skills ul {
+    text-align: center;
+    list-style-position: inside;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
 }
