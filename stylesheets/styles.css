@@ -422,7 +422,7 @@ nav ul li:hover a {
   background-repeat: repeat;
 }
 
-@media (min-width: 100px) and (max-width: 320px) {
+@media (min-width: 100px) and (max-width: 540px) {
   .iconify {
     color: #b3b3b3;
     font-size: 48px;
