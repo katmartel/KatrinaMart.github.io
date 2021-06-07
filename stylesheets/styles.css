@@ -516,3 +516,76 @@ nav ul li:hover a {
     font-size: 28px;
   }
 }
+
+/*--------------------------------------------------------*/
+/* Projects Page */
+@media (min-width: 100px) and (max-width: 767px) {
+  .projects {
+    margin-top: 125px;
+  }
+
+  .project-group {
+    padding-top: 180px;
+  }
+
+  .accordion {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .project-group {
+    padding-top: 300px;
+  }
+}
+.projects {
+  background-image: url("../images/parallax_background.png");
+  height: 3000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.project-group {
+  margin-bottom: 60px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 36px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
