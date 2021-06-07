@@ -358,7 +358,7 @@ nav ul li:hover a {
     margin-top: 700px;
   }
 }
-
+/*--------------------------------------------------------*/
 /* Skills Page */
 .parallax {
   /* background-image: url("../images/Peach\ Floral\ Desktop\ Wallpaper\ \(3\).png"); */
@@ -381,7 +381,7 @@ nav ul li:hover a {
   margin-top: -300px;
 }
 
-.iconify {
+.skills .iconify {
   color: #b3b3b3;
   font-size: 48px;
   position: absolute;
@@ -423,7 +423,7 @@ nav ul li:hover a {
 }
 
 @media (min-width: 100px) and (max-width: 540px) {
-  .iconify {
+  .skills .iconify {
     color: #b3b3b3;
     font-size: 48px;
     position: absolute;
@@ -453,5 +453,36 @@ nav ul li:hover a {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+  }
+}
+
+/*--------------------------------------------------------*/
+/* Contact Page */
+.contact {
+  background-color: #ffffff;
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 5px 10px 18px 5px #888888;
+  margin-top: -300px;
+}
+
+.contact .iconify {
+  color: #b3b3b3;
+  font-size: 108px;
+  padding: 20px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 12px;
+}
+
+@media (min-width: 100px) and (max-width: 540px) {
+  .contact a {
+    display: block;
   }
 }
