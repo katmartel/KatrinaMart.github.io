@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --underline-width: 5px;
+  --underline-block-width: 20px;
+  --underline-color: hsla(0, 0%, 16%, 0.5);
+  --underline-color-hover: rgb(195, 136, 136);
+  --underline-transition: 0.3s;
+}
+
 /* Body */
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -583,9 +593,54 @@ nav ul li:hover a {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 22px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+.project-image {
+  width: 240px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.panel .title {
+  color: #a56c6c;
+  font-size: 24px;
+}
+
+.panel .date {
+  color: #717070;
+  font-size: 18px;
+}
+
+.panel .description {
+  line-height: 175%;
+}
+
+.project-link a {
+  color: #daa520;
+  font-size: 16px;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+    linear-gradient(90deg, var(--underline-color), var(--underline-color));
+  background-size: var(--underline-block-width) var(--underline-width),
+    100% var(--underline-width);
+  background-repeat: no-repeat;
+  background-position-x: calc(var(--underline-block-width) * -1), 0;
+  background-position-y: 100%;
+  transition: background-position-x var(--underline-transition);
+}
+
+.project-link a:hover {
+  background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+    linear-gradient(
+      90deg,
+      var(--underline-color-hover),
+      var(--underline-color-hover)
+    );
+  background-position-x: calc(100% + var(--underline-block-width)), 0;
 }
