@@ -160,7 +160,6 @@ nav ul li:hover a {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0px;
-  background-repeat: repeat;
 }
 
 /* Additional Information Section */
@@ -532,6 +531,7 @@ nav ul li:hover a {
 @media (min-width: 100px) and (max-width: 767px) {
   .projects {
     margin-top: 125px;
+    height: 8000px;
   }
 
   .project-group {
@@ -541,16 +541,28 @@ nav ul li:hover a {
   .accordion {
     font-size: 28px;
   }
+
+  .project-image {
+    float: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1920px) {
   .project-group {
     padding-top: 300px;
   }
+
+  .projects {
+    height: 10000px;
+  }
+
+  .project-image {
+    margin-left: 20px;
+    float: right;
+  }
 }
 .projects {
   background-image: url("../images/parallax_background.png");
-  height: 3000px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -601,8 +613,6 @@ nav ul li:hover a {
 }
 .project-image {
   width: 240px;
-  float: right;
-  margin-left: 20px;
   margin-top: 10px;
   border-radius: 4px;
 }
