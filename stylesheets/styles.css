@@ -534,7 +534,7 @@ nav ul li:hover a {
 @media (min-width: 100px) and (max-width: 767px) {
   .projects {
     margin-top: 125px;
-    height: 8000px;
+    height: 7000px;
   }
 
   .project-group {
@@ -556,7 +556,7 @@ nav ul li:hover a {
   }
 
   .projects {
-    height: 10000px;
+    height: 8000px;
   }
 
   .project-image {
