@@ -492,6 +492,11 @@ nav ul li:hover a {
   border-radius: 12px;
 }
 
+.contact .iconify:hover {
+  color: #daa520;
+  opacity: 0.4;
+}
+
 .contact {
   text-align: center;
 }
