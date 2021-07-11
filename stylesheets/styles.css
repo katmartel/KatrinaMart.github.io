@@ -481,18 +481,6 @@ nav ul li:hover a {
 }
 
 .contact .iconify {
-  color: #f5f5f5;
-  font-size: 108px;
-  padding: 20px;
-  margin-left: 20px;
-  box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.83),
-    6px 6px 16px 0 rgba(217, 210, 200, 0.51);
-  background: #e9d7d3;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-}
-
-.contact .iconify {
   color: #ecd2cc;
   font-size: 108px;
   padding: 20px;
