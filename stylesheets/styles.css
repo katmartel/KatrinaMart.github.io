@@ -388,6 +388,7 @@ nav ul li:hover a {
   border-radius: 1px;
   box-shadow: 5px 10px 18px 5px #888888;
   margin-top: -300px;
+  line-height: 50px;
 }
 
 .skills .iconify {
