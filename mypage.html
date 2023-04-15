@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <nav id="bar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <p class="logo">KM</p>
+          </a>              
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>            
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#about" data-target="about" class="navbar-item">
+              About
+            </a>
+            <a href="#projects" data-target="projects" class="navbar-item">
+              Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav> 
+
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-1">
+              <h1 class="title is-2">
+                Hi! I'm Katrina
+              </h1>
+              <h2 class="subtitle is-4">
+                <span class="tag is-medium" id="education-tag">
+                  Educator
+                </span>
+                <span class="tag is-medium" id="software-development-tag">
+                  Software Developer
+                </span>              
+              </h2>
+              <p class="subtitle">
+                <button class="button is-medium" id="learn-more" onclick="location.href='#about';"> Learn More </button>
+              </p>
+            </div>
+            <div class="column is-4 is-offset-1">
+              <figure class="image image is-4by4">
+                <img src="images/vector.png" class="vector_img" alt="Description">
+                <img class="is-overlay is-rounded" src="images/2022_2023_School_Picture-removebg-preview.png" alt="Description">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+                <div class="wave-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#bab1fa" fill-opacity="1" d="M0,0L48,21.3C96,43,192,85,288,90.7C384,96,480,64,576,69.3C672,75,768,117,864,154.7C960,192,1056,224,1152,202.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-3by4">
+            <div class="about-image is-hidden-mobile">
+              <img src="images/about-image.png" alt="Illustration of Workspace">
+            </div>
+          </div>
+          <div class="column is-8">
+            <div class="box">
+              <h2 class="title is-2 is-spaced">About Katrina</h2>
+              <h3 class="subtitle is-5"> <span id="laptop-emoji"> 💻 </span> From the Keyboard to the Classroom, one Byte at a time <span id="apple-emoji"> 🍎 </span> </h3>
+              <p> Currently located in Kelowna, British Columbia, Canada, I teach on-call for SD23 during the week, and code in my spare time. I’ve often heard how unusual it is that I pursued a B.Ed after completing my undergrad in Computer Science. To me, it wasn’t that unusual: the computer’s always been my paintbrush, and it’s a joy I’ve also shared as a technologist educator that brings coding skills & better digital learning experiences into the classroom.  </p>
+              <p> My unique skillset intersecting UX, software development, and education blends naturally into a drive to ship user-empowering products. I love reaching a decision among interdisciplinary stakeholders and driving as a cross-functional team toward shared results. </p>
+              <p> With major interests in UX, Tech Evangelism, and STEM Education, I'm most eager to hone my industry Web Development expertise with roles focused on UX, HCI, or Product Management. I currently have my eyes set on building the product skills to eventually champion better software in educational technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="education" class="section">
+      <div class="container">
+        <h3 id="section-title"class="title is-3 has-text-centered has-text-white">Education</h3>
+        <div class="columns">
+          <div class="column is-half">
+            <div class="box">
+              <h3 class="title is-4">Bachelor of Arts in Computer Science, Minor in Psychology</h3>
+              <p class="subtitle is-6">University of British Columbia, 2021</p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box">
+              <h3 class="title is-4">Bachelor of Education</h3>
+              <p class="subtitle is-6">University of British Columbia, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h1 class="title has-text-centered">Projects</h1>
+      <div class="box">
+        <div class="container">
+          <div class="tabs-container">
+            <div class="tabs is-centered is-vertical is-left">
+              <ul>
+                <li class="is-active"><a class="tab project-type" data-project-type="software-engineering">Software Engineering</a></li>
+                <li><a class="tab project-type" data-project-type="ui-ux">UI/UX</a></li>
+                <li><a class="tab project-type" data-project-type="education">Educational</a></li>
+              </ul>
+            </div>
+            <div class="cards-container">
+              <div class="projects-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <a href="https://github.com/katmartel" class="social-icon"><i class="fab fa-github"></i> <span>github</span></a>
+          <a href="https://www.linkedin.com/in/katrina-martel/" class="social-icon"><i class="fab fa-linkedin"></i> <span>linkedin</span></a>
+          <a href="mailto:kmartel@student.ubc.ca" class="social-icon"><i class="far fa-envelope"></i> <span>email</span></a>
+        </p>
+        <p>
+          Made by Katrina Martel, 2023
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <div class="output"></div>
+  </body>
+</html>
+

@@ -1,0 +1,19 @@
+{
+  
+  "name": "personal-website",
+  "version": "1.0.0",
+  "main": "sass/mystyles.scss",
+  "repository": "https://github.com/KatrinaMart/personal-website.git",
+  "author": "KatrinaMart <k.martel@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
+  "scripts": {
+    "css-build": "node-sass  --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "yarn run css-build -- --watch",
+    "start": "yarn run css-watch"
+  }
+  
+}
+

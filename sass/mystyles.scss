@@ -1,0 +1,407 @@
+
+@charset "utf-8";
+
+/* Variables */
+$primary-color: #9F92F7;
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navigation */
+
+$navbar-background-color: $primary-color;
+$navbar-item-color: #FFF;
+$navbar-item-hover-color: #9F92F7;
+$navbar-item-hover-background-color: #FFFFFF;
+
+.logo:hover {
+  color: #FFFFFF;
+}
+
+/* Hero */
+.hero-body{
+  margin-top: 50px;
+}
+
+#education-tag {
+  background: #3A86FF;
+}
+
+#software-development-tag {
+    background: #8338EC;
+}
+
+$tag-color: #FFFFFF;
+$tag-radius: 13px;
+
+$button-border-color: $primary-color;
+$button-hover-border-color: $primary-color;
+
+#learn-more:hover{
+  background-color: $primary-color;
+  color: #FFFFFF;
+
+}
+
+.wave-container {
+  position: relative;
+  background: #FFFFFF;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.wave-container > svg {
+  display: block;
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+.wave-container > svg {
+  display: block;
+  transform-origin: bottom;
+  animation: animateWave 1500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* About */
+
+#section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#education {
+  background: #9F92F7;
+}
+
+#education .box {
+  display: flex;
+  flex-direction: column;
+  line-height: 200px;
+  text-align: center;
+  height: 100%;
+}
+
+#education .title, #education .subtitle {
+  color: #444444;
+}
+
+#education .title.is-4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#education .subtitle.is-6 {
+  font-size: 1.0rem;
+}
+
+#about {
+  background: linear-gradient(180deg, rgba(159, 146, 247, 0.71) 0%, #9F92F7 100%);
+  padding: 6rem 2rem;
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1A1A1A;
+    margin-bottom: 2rem;
+  }
+
+  #laptop-emoji {
+    margin-right: 3px;
+  }
+  #laptop-emoji {
+    margin-left: 3px;
+  }
+
+  p {
+    font-size: 1.0rem;
+    color: #1A1A1A;
+    margin-bottom: 2rem;
+  }
+
+  .about-image img {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.box {
+  padding: 1.75rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #2e2e2e;
+  }
+}
+
+
+   /* Projects */
+#projects{
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .box {
+    margin: 15px;
+     p {
+      font-size: 1.0rem;
+     }
+  }
+
+  .custom-tag-class {
+    background-color: #9F92F7 !important;
+    color: #ffffff !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    margin: 20px;
+    .title {
+      font-size:1.25rem;
+      color:#444444;
+      margin-bottom: -12px;
+    }
+    .subtitle{
+      font-size: 1.0rem;
+      color:#444444;
+    }
+  }
+  
+  .card-content {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Desktop and Large Screens */
+  @media (min-width: 1025px) {
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .tabs.is-vertical {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      float: left;
+      position: sticky;
+      top: 100px;
+      left: 15px;
+    }
+    
+    .tabs.is-vertical ul {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1.5rem;
+    }
+    
+    .tabs.is-vertical li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .tabs.is-vertical li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .tabs.is-vertical a {
+      border-radius: 6px;
+      border: 1px solid #dbdbdb;
+      color: #363636;
+      display: block;
+      margin-bottom: -1px;
+      padding: 0.5rem 0.75rem;
+      text-align: center;
+    }
+    
+    .tabs.is-vertical a:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .tabs-container {
+      margin-right: 1rem;
+    }
+
+    .cards-container {
+      flex: 2;
+      display: flex;
+      justify-content: flex-end;
+    
+    }
+    .card {
+      width: 300px;
+      margin: 20px;
+    }
+    .card-content {
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+  }
+
+/* Tablets and Small Screens */
+@media (max-width: 1024px) {
+.tab {
+  cursor: pointer;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.tab:active {
+  position: relative;
+  top: 1px;
+}
+
+.tabs.is-vertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+}
+    
+  /*Mobile*/ 
+  @media (max-width: 480px) {
+    .tab {
+      cursor: pointer;
+      touch-action: pan-y;
+      user-select: none;
+    }
+  
+    .tab:active {
+      position: relative;
+      top: 1px;
+    }
+  
+    .tabs.is-vertical {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      position: sticky;
+      top: 50px;
+      left: 0;
+      z-index: 1;
+      background-color: #fff;
+    }
+  
+    .tabs.is-vertical ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .tabs.is-vertical li {
+      margin: 10px 0;
+    }
+  
+    .projects-container {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .projects-container.change-tab {
+      transform: translateY(-100%);
+    }
+  }
+
+}
+
+/* Footer */
+$footer-background-color: $primary-color;
+.social-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #9F92F7;
+  text-transform: uppercase;
+}
+
+.social-icon:not(:last-child)::after {
+  content: '|';
+  margin-left: 10px;
+  opacity: 50%;
+}
+
+.social-icon span {
+  font-size: 16px;
+} 
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/elements/tag.sass";

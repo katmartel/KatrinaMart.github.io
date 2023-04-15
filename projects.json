@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "image": "images/mentormatch.png",
+        "project_name": "Mentor Match",
+        "tags": ["React", "Node.js", "Firebase"],
+        "duration": "September 2020 - April 2021",
+        "description": "A web-based mentorship platform aiming to facilitate the matching process between users seeking to learn skills (Mentees) and individuals who can offer guidance in sought-after skills (Mentors). Over the duration of the Capstone project, I served as my team of four's client liaison (which entailed preparing and taking extensive notes of weekly hour-long meetings with the client, then relaying this information to my team to streamline our Scrum Sprint). Built with React on the front-end, Node for the back-end, and Firebase for our database.",
+        "link": "https://github.com/"
+      },
+      {
+        "image": "images/project2.png",
+        "project_name": "Project 2",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "duration": "June 2021 - August 2021",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. Sed sit amet lacus enim. Aenean interdum nulla vitae neque pulvinar lacinia. Sed eu augue ac nibh tempor consectetur. Nullam at maximus velit. Fusce varius bibendum nisi, et blandit quam consectetur vel.",
+        "link": "https://github.com/"
+      },
+      {
+        "image": "images/project3.png",
+        "project_name": "Project 3",
+        "tags": ["React", "Node.js"],
+        "duration": "January 2022 - Present",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. Sed sit amet lacus enim. Aenean interdum nulla vitae neque pulvinar lacinia. Sed eu augue ac nibh tempor consectetur. Nullam at maximus velit. Fusce varius bibendum nisi, et blandit quam consectetur vel.",
+        "link": "https://github.com/"
+      }
+    ]
+  }
+  
