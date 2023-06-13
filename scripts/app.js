@@ -141,7 +141,7 @@ const projects = [
     duration: "May 2023",
     description:
       "A collaborative note-taking template in FigJam using the 'jigsaw' instructional method to facilitate student learning and engagement. With a focus on helping intermediate elementary to secondary school students take on specific roles in group settings, the template affords interactivity and accountability. Additionally, the self-reflection component promotes metacognitive thinking and provides an opportunity for students to assess their contributions to the group.",
-    link: "https://www.figma.com/community/file/1238650029946575213",
+    link: "https://www.youtube.com/watch?v=UBHhk_rN1Tw",
     projectType: "education",
   },
   {
