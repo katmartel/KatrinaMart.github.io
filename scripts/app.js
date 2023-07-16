@@ -100,7 +100,7 @@ const projects = [
     tags: ["Figma", "Wireframe", "User-Centred Design"],
     duration: "June 2022",
     description:
-      "As a UX Designer, I took on a challenging design project that involved creating wireframes for a three-page website. The task was to display structured data for individual sheep, including their owner, breed, birthdate, sex, and vaccination records stored in a JSON file. With limited information, I used my UX design skills to deliver a seamless user experience, incorporating best practices to ensure that every feature of the site would be intuitive and user-friendly. By focusing on usability and visual appeal, I was able to produce wireframes that showcased the essential information in an engaging and informative manner, resulting in a design that would meet the needs of both the client and their users.",
+      "Tasked with creating three pages in a user portal to display information belonging to individual sheep, I employed key design thinking processes. Leveraging my background in computer science, I was able to parse through the data in the JSON file, identifying project goals and employing empathy for users. Through iterative prototyping and user testing, I refined the wireframes to design a solution that successfully addressed  the project's requirements and provided an engaging and informative experience for users.",
     link: "https://www.figma.com/file/ClXm1y0PhRAietBlNxePZk/CSF-Designer-Internship-Assessment?type=design&node-id=101%3A2&t=EyJJf4cPiXgQvK0A-1",
     projectType: "ui-ux",
   },
