@@ -120,7 +120,7 @@ const projects = [
     tags: ["Figma", "Information Architecture", "User Interviews"],
     duration: "June 2021",
     description:
-      "A project aimed to modernize the user experience of parking meters from that of traditional standalone meters.",
+      "A relic to the first time I used Figma to create an interactive prototype. Although the current prototype would require significant changes to improve the UI, the design document showcases the groundwork and insights from user interviews that shaped the project.",
     link: "images/mobile_meter.pdf",
     projectType: "ui-ux",
   },
