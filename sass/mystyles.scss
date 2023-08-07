@@ -378,17 +378,24 @@ $button-hover-border-color: $primary-color;
 
 /* Footer */
 $footer-background-color: $primary-color;
+
 .social-icon {
   font-size: 24px;
   margin-right: 10px;
   color: #9F92F7;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: baseline;
 }
 
 .social-icon:not(:last-child)::after {
   content: '|';
   margin-left: 10px;
   opacity: 50%;
+}
+
+.social-icon i {
+  margin-right: 5px;
 }
 
 .social-icon span {
