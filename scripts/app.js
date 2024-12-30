@@ -135,6 +135,16 @@ const projects = [
     projectType: "ui-ux",
   },
   {
+    image: "images/microbit+led.png",
+    title: "LED Light Show with Micro:bit",
+    tags: ["Coding", "Music Theory", "Hands-On"],
+    duration: "December 2024",
+    description:
+      "In the spirit of Computer Science Education Week, I designed an LED programming activity.",
+    link: "https://www.youtube.com/watch?v=YpC46Yc4148",
+    projectType: "education",
+  },
+  {
     image: "images/jigsaw.png",
     title: "Figjam Jigsaw Reading Template",
     tags: ["Collaboration", "Reflective Practice", "Active Learning"],
