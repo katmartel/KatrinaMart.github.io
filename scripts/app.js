@@ -25,6 +25,15 @@ tabs.forEach((tab) => {
 // Generatte project cards and filter by tab
 const projects = [
   {
+    image: "images/bdk.png",
+    title: "Ballroom Dance Kelowna",
+    tags: ["HTMl/CSS", "Freelance"],
+    duration: "2025",
+    description: "A freelance project for the local ballroom dance scene.",
+    link: "https://www.ballroomdancekelowna.ca/",
+    projectType: "software-engineering",
+  },
+  {
     image: "images/mentormatch.png",
     title: "Mentor Match",
     tags: ["React", "Node.js", "Firebase"],
@@ -133,6 +142,16 @@ const projects = [
       "A low-fidelity prototype using Balsamiq to model the mobile interface of a bike safety app for COSC 341 (Human Computer Interaction).",
     link: "images/bike_saftey_app_prototype.pdf",
     projectType: "ui-ux",
+  },
+  {
+    image: "images/cs-ed-2025.png",
+    title: "Holiday Unlock the Box Challenge",
+    tags: ["Hands-on", "Problem Solving"],
+    duration: "December 2025",
+    description:
+      "A holiday tech activity, introducing grade 3-5 students to the concept of logic gates.",
+    link: "https://www.linkedin.com/posts/katrina-martel_computerscienceeducationweek-activity-7409276691749089280-C8GJ",
+    projectType: "education",
   },
   {
     image: "images/microbit+led.png",
